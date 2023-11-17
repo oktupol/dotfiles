@@ -1,0 +1,11 @@
+[Unit]
+Description=Waybar
+After=sway-session.target
+Documentation=man:waybar(5)
+
+[Service]
+ExecStart=/usr/bin/waybar
+Type=simple
+
+[Install]
+WantedBy=sway-session.target

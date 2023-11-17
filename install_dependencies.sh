@@ -3,6 +3,7 @@
 dependencies=(
 	sway
 	swaybg
+	waybar
 	dmenu
 	kitty
 	j4-dmenu-desktop
