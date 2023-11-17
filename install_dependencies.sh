@@ -3,7 +3,7 @@
 dependencies=(
 	sway
 	dmenu
-	foot
+	kitty
 	j4-dmenu-desktop
 	brightnessctl
 )
