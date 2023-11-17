@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["sway/workspaces", "sway/mode"],
 	"modules-center": ["sway/window"],
-	"modules-right": ["tray", "pulseaudio", "battery", "clock"],
+	"modules-right": ["tray", "pulseaudio", "battery", "bluetooth", "clock"],
 	
 	"sway/window": {
 		"max-length": 50
@@ -17,6 +17,12 @@
 		"format-icons": ["󰕿", "󰖀", "󰕾"],
 		"scroll-step": 5,
 		"on-click": "pavucontrol"
+	},
+	"bluetooth": {
+		"format-off": "󰂲",
+		"format-on": "󰂯",
+		"format-connected": "󰂱 {num_connections} connected",
+		"on-click": "blueman-manager"
 	},
 	"battery": {
 		"format": "{icon} {capacity}%",
