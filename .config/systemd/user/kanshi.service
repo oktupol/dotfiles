@@ -1,0 +1,11 @@
+[Unit]
+Description=Kanshi Display Manager Daemon
+After=sway-session.target
+Documentation=man:kanshi(1)
+
+[Service]
+ExecStart=/usr/bin/kanshi
+Type=simple
+
+[Install]
+WantedBy=sway-session.target
