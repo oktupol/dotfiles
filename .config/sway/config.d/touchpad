@@ -1,4 +1,4 @@
-input "1267:12608:MSFT0001:01_04F3:3140_Touchpad" {
+input type:touchpad {
 	dwt enabled
 	click_method clickfinger
 	tap disabled
