@@ -35,7 +35,7 @@
 		"format-ethernet": "󰈁",
 		"tooltip-format-ethernet": "{ifname} - {ipaddr}",
 		"format-wifi": "{icon} {signalStrength}%",
-		"tooltip-format-wifi": "{ifname} - {ipaddr} - {signalStrength}%",
+		"tooltip-format-wifi": "{ifname} - {ipaddr} - {frequency}MHz - {signaldBm}dBm",
 		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
 		"format-disconnected": "󰌙",
 		"tooltip-format-disconnected": "Disconnected"

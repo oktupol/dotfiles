@@ -108,7 +108,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+if [[ "$TERM" = "linux" ]]; then
+	[[ ! -f ~/.p10k-linux.zsh ]] || source ~/.p10k-linux.zsh
+else
+	[[ ! -f ~/.p10k-xterm.zsh ]] || source ~/.p10k-xterm.zsh
+fi
 
 # Custom options
 [[ ! -f ~/.zshrc.custom ]] || source ~/.zshrc.custom
