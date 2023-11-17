@@ -1,5 +1,5 @@
 {
-	"layer": "top",
+	"layer": "bottom",
 	"modules-left": ["sway/workspaces", "sway/scratchpad", "sway/mode"],
 	"modules-center": ["sway/window"],
 	"modules-right": ["tray", "pulseaudio", "battery", "bluetooth", "network", "clock"],
