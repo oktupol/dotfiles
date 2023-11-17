@@ -41,4 +41,7 @@ require("lazy").setup({
 
 require('common')
 require('neovide')
-require('lualine').setup()
+
+if vim.env.TERM ~= "linux" then
+	require('lualine').setup()
+end
