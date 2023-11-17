@@ -1,13 +1,16 @@
 {
 	"layer": "top",
-	"modules-left": ["sway/workspaces", "sway/mode"],
+	"modules-left": ["sway/workspaces", "sway/scratchpad", "sway/mode"],
 	"modules-center": ["sway/window"],
 	"modules-right": ["tray", "pulseaudio", "battery", "bluetooth", "network", "clock"],
 	
 	"sway/window": {
 		"max-length": 50
 	},
-
+	"sway/scratchpad": {
+		"format": "{icon} {count}",
+		"format-icons": ["", "󰖯", "󰖲"]
+	},
 	"tray": {
 		"spacing": 6
 	},
