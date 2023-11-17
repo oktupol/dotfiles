@@ -9,29 +9,29 @@ get_battery() {
 	local status=$(cat /sys/class/power_supply/BAT0/status)
 	local battery_icon=""
 
-	if [[ status = "Charging" ]]; then
+	if [[ $status = "Charging" ]]; then
 		if [[ percentage -lt 10 ]]; then
-			battery_icon="󰢟"
+			battery_icon="󰂎 󱐋"
 		elif [[ percentage -lt 20 ]]; then
-			battery_icon="󰢜"
+			battery_icon="󰁺 󱐋"
 		elif [[ percentage -lt 30 ]]; then
-			battery_icon="󰂆"
+			battery_icon="󰁻 󱐋"
 		elif [[ percentage -lt 40 ]]; then
-			battery_icon="󰂇"
+			battery_icon="󰁼 󱐋"
 		elif [[ percentage -lt 50 ]]; then
-			battery_icon="󰂈"
+			battery_icon="󰁽 󱐋"
 		elif [[ percentage -lt 60 ]]; then
-			battery_icon="󰢝"
+			battery_icon="󰁾 󱐋"
 		elif [[ percentage -lt 70 ]]; then
-			battery_icon="󰂉"
+			battery_icon="󰁿 󱐋"
 		elif [[ percentage -lt 80 ]]; then
-			battery_icon="󰢞"
+			battery_icon="󰂀 󱐋"
 		elif [[ percentage -lt 90 ]]; then
-			battery_icon="󰂊"
+			battery_icon="󰂁 󱐋"
 		elif [[ percentage -le 95 ]]; then
-			battery_icon="󰂋"
+			battery_icon="󰂂 󱐋"
 		else
-			battery_icon="󰂅"
+			battery_icon="󰁹 󱐋"
 		fi
 	else
 		if [[ percentage -lt 10 ]]; then
