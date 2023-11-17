@@ -1,0 +1,19 @@
+# Vi Mode
+set -o vi
+
+# Add .bin dir to $PATH
+export PATH=$HOME/.bin:$PATH
+
+# Add nodejs bin dir to $PATH
+export PATH=$HOME/.npm/bin:$PATH
+
+# Add jetbrains bin dir to $PATH
+export PATH=$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH
+
+# Default editor
+export EDITOR="nvim"
+
+# Aliases
+alias sl='echo $(tr -cd a-z0-9 < /dev/urandom | head -c 12)'
+alias vi='nvim'
+alias view='nvim -R'

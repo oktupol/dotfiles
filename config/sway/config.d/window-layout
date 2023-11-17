@@ -1,0 +1,7 @@
+default_border pixel
+gaps inner 4
+gaps outer -1
+smart_gaps on
+hide_edge_borders smart_no_gaps
+
+# vi: ft=swayconfig

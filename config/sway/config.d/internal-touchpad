@@ -1,0 +1,9 @@
+input "1267:12608:MSFT0001:01_04F3:3140_Touchpad" {
+	dwt enabled
+	click_method clickfinger
+	tap disabled
+	natural_scroll enabled
+	middle_emulation disabled
+}
+
+# vi: ft=swayconfig

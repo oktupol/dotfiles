@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Sebastian Wieland
+	email = git-commits@nwie.land
+	signingkey = F0DD6033E990EF6FD66C5B41E8570A1485D8629B
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true

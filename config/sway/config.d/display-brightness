@@ -1,0 +1,25 @@
+mode "brightness" {
+	bindsym $up exec brightnessctl set +5%
+	bindsym $down exec brightnessctl set 5%-
+
+	bindsym Up exec brightnessctl set +5%
+	bindsym Down exec brightnessctl set 5%-
+
+	bindsym 1 exec brightnessctl set 10%
+	bindsym 2 exec brightnessctl set 20%
+	bindsym 3 exec brightnessctl set 30%
+	bindsym 4 exec brightnessctl set 40%
+	bindsym 5 exec brightnessctl set 50%
+	bindsym 6 exec brightnessctl set 60%
+	bindsym 7 exec brightnessctl set 70%
+	bindsym 8 exec brightnessctl set 80%
+	bindsym 9 exec brightnessctl set 90%
+	bindsym 0 exec brightnessctl set 100%
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym $mod+m mode "default"
+}
+bindsym $mod+m mode "brightness"
+
+# vi: filetype=swayconfig
