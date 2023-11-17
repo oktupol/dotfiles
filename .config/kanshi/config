@@ -4,5 +4,5 @@ profile {
 
 profile {
 	output eDP-1 disable
-	output DP-5 enable
+	output "Samsung Electric Company C34H89x HTOM700567" enable
 }
