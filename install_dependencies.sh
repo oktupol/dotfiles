@@ -2,6 +2,7 @@
 
 dependencies=(
 	sway
+	swaybg
 	dmenu
 	kitty
 	j4-dmenu-desktop
