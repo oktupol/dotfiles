@@ -1,0 +1,10 @@
+[Unit]
+Description=Synology Drive Client
+After=sway-session.target
+
+[Service]
+ExecStart=/usr/bin/flatpak run com.synology.SynologyDrive
+Type=simple
+
+[Install]
+WantedBy=sway-session.target
