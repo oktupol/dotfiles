@@ -6,6 +6,7 @@ dependencies=(
 	kitty
 	j4-dmenu-desktop
 	brightnessctl
+	kanshi
 )
 
 sudo pacman -S ${dependencies[@]}
