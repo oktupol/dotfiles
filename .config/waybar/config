@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["sway/workspaces", "sway/mode"],
 	"modules-center": ["sway/window"],
-	"modules-right": ["tray", "pulseaudio", "battery", "bluetooth", "clock"],
+	"modules-right": ["tray", "pulseaudio", "battery", "bluetooth", "network", "clock"],
 	
 	"sway/window": {
 		"max-length": 50
@@ -27,6 +27,15 @@
 	"battery": {
 		"format": "{icon} {capacity}%",
 		"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+	},
+	"network": {
+		"format-ethernet": "󰈁",
+		"tooltip-format-ethernet": "{ifname} - {ipaddr}",
+		"format-wifi": "{icon} {signalStrength}%",
+		"tooltip-format-wifi": "{ifname} - {ipaddr} - {signalStrength}%",
+		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+		"format-disconnected": "󰌙",
+		"tooltip-format-disconnected": "Disconnected"
 	},
 	"clock": {
 		"format-alt": "{:%A %d %B %H:%M}"
