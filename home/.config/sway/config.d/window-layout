@@ -1,8 +1,5 @@
 default_border normal
 gaps inner 12
-# gaps outer -4
-smart_gaps on
-hide_edge_borders smart_no_gaps
 font sans_serif 8
 title_align center
 titlebar_padding 3
