@@ -16,6 +16,9 @@ export EDITOR="nvim"
 # Screenshot directory
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"
 
+# Enable wayland support for firefox and thunderbird
+export MOZ_ENABLE_WAYLAND=1
+
 # Aliases
 alias sl='echo $(tr -cd a-z0-9 < /dev/urandom | head -c 12)'
 alias vi='nvim'
