@@ -13,6 +13,9 @@ export PATH=$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH
 # Default editor
 export EDITOR="nvim"
 
+# Screenshot directory
+export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"
+
 # Aliases
 alias sl='echo $(tr -cd a-z0-9 < /dev/urandom | head -c 12)'
 alias vi='nvim'
