@@ -43,6 +43,7 @@
 		"tooltip-format-disconnected": "Disconnected"
 	},
 	"clock": {
-		"format-alt": "{:%A %d %B %H:%M}"
+		"format-alt": "{:%A %d %B %H:%M}",
+		"tooltip-format": "<tt>{calendar}</tt>"
 	}
 }
