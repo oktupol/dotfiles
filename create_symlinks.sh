@@ -8,7 +8,6 @@ from_paths=(
 
 for path in "${from_paths[@]}"; do
 	for f in $(find $path -mindepth 1 -maxdepth 1); do
-		basename="$(basename $f)"
 		absolute_path="$(realpath $f)"
 		link_target="$HOME/${f#*/}"
 
