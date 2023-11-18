@@ -6,3 +6,6 @@ insensitive=true
 
 # Search Prompt
 prompt=Run Application
+
+# Hide scroll bar
+hide_scroll=true
