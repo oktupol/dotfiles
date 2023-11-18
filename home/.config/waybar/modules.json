@@ -36,8 +36,8 @@
 	"network": {
 		"format-ethernet": "󰈁",
 		"tooltip-format-ethernet": "{ifname} - {ipaddr}",
-		"format-wifi": "{icon} {signalStrength}%",
-		"tooltip-format-wifi": "{ifname} - {ipaddr} - {frequency}MHz - {signaldBm}dBm",
+		"format-wifi": "{icon} {essid}",
+		"tooltip-format-wifi": "{ifname} - {ipaddr} - {frequency}MHz - {signalStrength}%",
 		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
 		"format-disconnected": "󰌙",
 		"tooltip-format-disconnected": "Disconnected"
