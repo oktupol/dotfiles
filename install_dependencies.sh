@@ -4,9 +4,8 @@ dependencies=(
 	sway
 	swaybg
 	waybar
-	dmenu
+	wofi
 	kitty
-	j4-dmenu-desktop
 	brightnessctl
 	kanshi
 )
