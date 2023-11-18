@@ -1,18 +1,19 @@
 default_border normal
-gaps inner 4
-gaps outer -1
+gaps inner 12
+gaps outer -4
 smart_gaps on
 hide_edge_borders smart_no_gaps
 font sans_serif 8
 title_align center
+titlebar_padding 3
 titlebar_border_thickness 0
 
 # Colors in order:
 # border, background, text, indicator, child_border
 client.focused 				'#00000000' '#FFFFFF40' '#FFFFFF' '#2E9EF4' '#FFFFFF40'
-client.focused_inactive		'#00000000' '#00000040' '#FFFFFF' '#484E50' '#00000000'
-client.focused_tab_title 	'#00000000' '#00000040' '#FFFFFF'
-client.unfocused 			'#00000000' '#00000000' '#888888' '#292D2E' '#00000000'
+client.focused_inactive		'#00000000' '#40404080' '#FFFFFF' '#484E50' '#40404080'
+client.focused_tab_title 	'#00000000' '#40404080' '#FFFFFF'
+client.unfocused 			'#00000000' '#00000080' '#888888' '#292D2E' '#00000080'
 client.urgent 				'#2f343a' '#900000C0' '#FFFFFF' '#900000' '#900000'
 
 # vi: ft=swayconfig
