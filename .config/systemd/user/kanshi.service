@@ -5,6 +5,7 @@ Documentation=man:kanshi(1)
 
 [Service]
 ExecStart=/usr/bin/kanshi
+ExecReload=/usr/bin/kanshictl reload
 Type=simple
 
 [Install]

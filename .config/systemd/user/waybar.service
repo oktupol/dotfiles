@@ -5,6 +5,7 @@ Documentation=man:waybar(5)
 
 [Service]
 ExecStart=/usr/bin/waybar
+ExecReload=kill -s USR2 $MAINPID
 Type=simple
 
 [Install]
