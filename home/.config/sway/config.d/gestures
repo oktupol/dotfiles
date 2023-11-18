@@ -3,7 +3,7 @@ bindgesture swipe:3:right workspace prev
 bindgesture swipe:3:left workspace next
 
 # Pop out windows by pinching out with four fingers
-bindgesture pinch:4:outward floating enable; border normal
-bindgesture pinch:4:inward floating disable; border pixel
+bindgesture pinch:4:outward floating enable
+bindgesture pinch:4:inward floating disable
 
 # vi: ft=swayconfig
