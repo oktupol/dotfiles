@@ -1,0 +1,5 @@
+bindsym Print exec /usr/share/sway/scripts/grimshot --notify save active
+bindsym $mod+Print exec /usr/share/sway/scripts/grimshot --notify save area
+bindsym $mod+Shift+Print exec /usr/share/sway/scripts/grimshot --notify save output
+
+# vi: ft=swayconfig

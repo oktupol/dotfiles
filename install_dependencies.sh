@@ -8,6 +8,8 @@ dependencies=(
 	kitty
 	brightnessctl
 	kanshi
+	grim
+	slurp
 )
 
 sudo pacman -S ${dependencies[@]}
