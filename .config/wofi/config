@@ -1,0 +1,5 @@
+# Show app icons
+allow_images=true
+
+# Case insensitive search
+insensitive=true
