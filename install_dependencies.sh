@@ -10,6 +10,7 @@ dependencies=(
 	kanshi
 	grim
 	slurp
+	mako
 )
 
 sudo pacman -S ${dependencies[@]}
