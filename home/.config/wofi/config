@@ -3,3 +3,6 @@ allow_images=true
 
 # Case insensitive search
 insensitive=true
+
+# Search Prompt
+prompt=Run Application
