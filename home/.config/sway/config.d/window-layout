@@ -1,6 +1,6 @@
 default_border normal
 gaps inner 12
-gaps outer -4
+# gaps outer -4
 smart_gaps on
 hide_edge_borders smart_no_gaps
 font sans_serif 8
@@ -10,7 +10,7 @@ titlebar_border_thickness 0
 
 # Colors in order:
 # border, background, text, indicator, child_border
-client.focused 				'#00000000' '#FFFFFF40' '#FFFFFF' '#2E9EF4' '#FFFFFF40'
+client.focused 				'#00000000' '#90909080' '#FFFFFF' '#2E9EF4' '#90909080'
 client.focused_inactive		'#00000000' '#40404080' '#FFFFFF' '#484E50' '#40404080'
 client.focused_tab_title 	'#00000000' '#40404080' '#FFFFFF'
 client.unfocused 			'#00000000' '#00000080' '#888888' '#292D2E' '#00000080'
