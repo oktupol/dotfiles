@@ -1,4 +1,5 @@
 for_window [app_id="pavucontrol"] floating enable
 for_window [app_id="blueman-manager"] floating enable
+for_window [app_id="ch.proton.bridge-gui"] floating enable
 
 # vi: ft=swayconfig

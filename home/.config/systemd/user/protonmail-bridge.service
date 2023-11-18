@@ -1,0 +1,10 @@
+[Unit]
+Description=Protonmail Bridge
+After=sway-session.target
+
+[Service]
+ExecStart=/usr/bin/flatpak run ch.protonmail.protonmail-bridge --no-window
+Type=simple
+
+[Install]
+WantedBy=sway-session.target
