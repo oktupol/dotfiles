@@ -1,0 +1,48 @@
+{
+	"sway/window": {
+		"max-length": 100
+	},
+	"sway/scratchpad": {
+		"format": "{icon} {count}",
+		"format-icons": ["", "󰖯", "󰖲"]
+	},
+	"tray": {
+		"spacing": 6
+	},
+	"pulseaudio": {
+		"format": "{desc} {icon} {volume}%",
+		"format-muted": "{desc} 󰖁",
+		"format-icons": ["󰕿", "󰖀", "󰕾"],
+		"scroll-step": 5,
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-click-right": "pavucontrol"
+	},
+	"bluetooth": {
+		"format-off": "󰂲",
+		"format-on": "󰂯",
+		"format-connected": "󰂱 {num_connections} connected",
+		"on-click-right": "blueman-manager"
+	},
+	"backlight": {
+		"format": "{icon} {percent}%",
+		"format-icons": ["󰛩", "󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"],
+		"on-scroll-up": "brightnessctl set +5%",
+		"on-scroll-down": "brightnessctl set 5%-"
+	},
+	"battery": {
+		"format": "{icon} {capacity}%",
+		"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+	},
+	"network": {
+		"format-ethernet": "󰈁",
+		"tooltip-format-ethernet": "{ifname} - {ipaddr}",
+		"format-wifi": "{icon} {signalStrength}%",
+		"tooltip-format-wifi": "{ifname} - {ipaddr} - {frequency}MHz - {signaldBm}dBm",
+		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+		"format-disconnected": "󰌙",
+		"tooltip-format-disconnected": "Disconnected"
+	},
+	"clock": {
+		"format-alt": "{:%A %d %B %H:%M}"
+	}
+}
