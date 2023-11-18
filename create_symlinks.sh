@@ -1,15 +1,16 @@
 #!/bin/bash
 
 from_paths=(
-	".config"
-	".config/systemd/user"
+	"home"
+	"home/.config"
+	"home/.config/systemd/user"
 )
 
 for path in "${from_paths[@]}"; do
 	for f in $(find $path -mindepth 1 -maxdepth 1); do
 		basename="$(basename $f)"
 		absolute_path="$(realpath $f)"
-		link_target="$HOME/$f"
+		link_target="$HOME/${f#*/}"
 
 		if [[ -L "$link_target" ]]; then
 			rm $link_target
