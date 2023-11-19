@@ -46,5 +46,38 @@
 	"clock": {
 		"format-alt": "{:%A %d %B %H:%M}",
 		"tooltip-format": "<tt>{calendar}</tt>"
+	},
+
+	"group/power": {
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-left-to-right": false
+		},
+		"modules": [
+			"custom/exit-sway",
+			"custom/reboot",
+			"custom/shutdown"
+		]
+	},
+
+	"custom/exit-sway": {
+		"format": "{}",
+		"return-type": "json",
+		"exec": "echo -e '{\"text\":\"󰿅\",\"tooltip\":\"Exit Sway\",\"class\":\"exit\"}'",
+		"on-click": "swaynag -t warning -m 'Sway will now exit.' -s 'Abort' -B 'Confirm' 'swaymsg exit'"
+	},
+	"custom/shutdown": {
+		"format": "{}",
+		"return-type": "json",
+		"exec": "echo -e '{\"text\":\"󰐥\",\"tooltip\":\"Shutdown\",\"class\":\"shutdown\"}'",
+		"on-click": "swaynag -t warning -m 'The device will now shut down.' -s 'Abort' -B 'Confirm' 'shutdown now'"
+
+	},
+	"custom/reboot": {
+		"format": "{}",
+		"return-type": "json",
+		"exec": "echo -e '{\"text\":\"󰑐\",\"tooltip\":\"Reboot\",\"class\":\"reboot\"}'",
+		"on-click": "swaynag -t warning -m 'The device will now reboot.' -s 'Abort' -B 'Confirm' 'reboot'"
+
 	}
 }

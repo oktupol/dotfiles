@@ -279,3 +279,20 @@ label:focus {
 #scratchpad.empty {
 	background-color: transparent;
 }
+
+
+/* Power drawer */
+#custom-exit-sway,
+#custom-shutdown,
+#custom-reboot {
+	padding: 0 8px;
+}
+#custom-exit-sway {
+	background-color: #A6A626;
+}
+#custom-shutdown {
+	background-color: #A6263B;
+}
+#custom-reboot {
+	background-color: #2666A6;
+}
