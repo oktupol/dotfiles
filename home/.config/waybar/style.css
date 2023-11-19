@@ -285,7 +285,8 @@ label:focus {
 #custom-arch-logo,
 #custom-exit-sway,
 #custom-shutdown,
-#custom-reboot {
+#custom-reboot,
+#custom-lock{
 	padding: 0 8px;
 }
 #custom-arch-logo {
@@ -300,4 +301,7 @@ label:focus {
 }
 #custom-reboot {
 	background-color: #2666A6;
+}
+#custom-lock {
+	background-color: #7BA626;
 }

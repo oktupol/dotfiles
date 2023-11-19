@@ -90,6 +90,9 @@ output * bg ~/Pictures/Wallpapers/Eagle.png fill
     # Exit sway (logs you out of your Wayland session)
     # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
     bindsym $mod+Shift+e exec swaymsg exit
+
+	# Lock sway
+	bindsym $mod+Shift+Escape exec swaylock
 #
 # Moving around:
 #
