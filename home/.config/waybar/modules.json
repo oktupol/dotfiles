@@ -4,7 +4,8 @@
 	},
 	"sway/scratchpad": {
 		"format": "{icon} {count}",
-		"format-icons": ["", "󰖯", "󰖲"]
+		"format-icons": ["", "󰖯", "󰖲"],
+		"tooltip-format": "{title}"
 	},
 	"tray": {
 		"spacing": 6
