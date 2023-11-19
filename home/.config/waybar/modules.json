@@ -47,6 +47,22 @@
 		"format-alt": "{:%A %d %B %H:%M}",
 		"tooltip-format": "<tt>{calendar}</tt>"
 	},
+	"keyboard-state#numlock": {
+		"numlock": true,
+		"format": "{}",
+		"format-icons": {
+			"unlocked": "",
+			"locked": "󰎦"
+		}
+	},
+	"keyboard-state#capslock": {
+		"capslock": true,
+		"format": "{}",
+		"format-icons": {
+			"unlocked": "",
+			"locked": "󰪛"
+		}
+	},
 
 	"group/power": {
 		"orientation": "horizontal",
@@ -60,7 +76,6 @@
 			"custom/shutdown"
 		]
 	},
-
 	"custom/arch-logo": {
 		"format": "󰣇",
 		"return-type": "json",

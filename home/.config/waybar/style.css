@@ -143,6 +143,10 @@ label:focus {
     background-color: #000000;
 }
 
+#bluetooth {
+	background-color: #2F2F2F;
+}
+
 #cpu {
     background-color: #2ecc71;
     color: #000000;
@@ -256,20 +260,12 @@ label:focus {
     min-width: 16px;
 }
 
-#keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
 #keyboard-state > label.locked {
+	font-size: 16px;
+    padding: 0 8px;
     background: rgba(0, 0, 0, 0.2);
+    color: #2d3436;
+	background-color: #4ceb4c;
 }
 
 #scratchpad {

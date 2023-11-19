@@ -3,14 +3,35 @@
 	"layer": "bottom",
 	"modules-left": ["sway/workspaces", "sway/scratchpad", "sway/mode"],
 	"modules-center": ["sway/window"],
-	"modules-right": ["tray", "pulseaudio", "backlight", "battery", "bluetooth", "network", "clock", "group/power"],
+	"modules-right": [
+		"tray",
+		"pulseaudio",
+		"backlight",
+		"battery",
+		"bluetooth",
+		"network",
+		"clock",
+		"keyboard-state#numlock",
+		"keyboard-state#capslock",
+		"group/power"
+	],
 	"include": "~/.config/waybar/modules.json"
 }, {
 	"output": ["!eDP-1", "*"],
 	"layer": "bottom",
 	"modules-left": ["sway/workspaces", "sway/scratchpad", "sway/mode"],
 	"modules-center": ["sway/window"],
-	"modules-right": ["tray", "pulseaudio", "battery", "bluetooth", "network", "clock", "group/power"],
+	"modules-right": [
+		"tray",
+		"pulseaudio",
+		"battery",
+		"bluetooth",
+		"network",
+		"clock",
+		"keyboard-state#numlock",
+		"keyboard-state#capslock",
+		"group/power"
+	],
 	"include": "~/.config/waybar/modules.json"
 }]
 // vi: ft=json
