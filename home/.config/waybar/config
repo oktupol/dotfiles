@@ -2,14 +2,14 @@
 	"output": "eDP-1",
 	"layer": "bottom",
 	"modules-left": ["sway/workspaces", "sway/scratchpad", "sway/mode"],
-	"modules-center": [],
+	"modules-center": ["sway/window"],
 	"modules-right": ["tray", "pulseaudio", "backlight", "battery", "bluetooth", "network", "clock"],
 	"include": "~/.config/waybar/modules.json"
 }, {
 	"output": ["!eDP-1", "*"],
 	"layer": "bottom",
 	"modules-left": ["sway/workspaces", "sway/scratchpad", "sway/mode"],
-	"modules-center": [],
+	"modules-center": ["sway/window"],
 	"modules-right": ["tray", "pulseaudio", "battery", "bluetooth", "network", "clock"],
 	"include": "~/.config/waybar/modules.json"
 }]

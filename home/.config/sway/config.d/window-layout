@@ -1,5 +1,5 @@
-default_border normal
-gaps inner 12
+default_border pixel 3
+gaps inner 10
 font sans_serif 8
 title_align center
 titlebar_padding 3
