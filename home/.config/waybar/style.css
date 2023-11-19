@@ -282,10 +282,19 @@ label:focus {
 
 
 /* Power drawer */
+#power * {
+	font-size: 18px;
+}
+
+#custom-arch-logo,
 #custom-exit-sway,
 #custom-shutdown,
 #custom-reboot {
 	padding: 0 8px;
+}
+#custom-arch-logo {
+	background-color: #2F2F2F;
+	color: #1793D1;
 }
 #custom-exit-sway {
 	background-color: #A6A626;
