@@ -21,7 +21,7 @@
 	"bluetooth": {
 		"format-off": "󰂲",
 		"format-on": "󰂯",
-		"format-connected": "󰂱 {num_connections} connected",
+		"format-connected": "󰂱 {num_connections}",
 		"on-click-right": "blueman-manager"
 	},
 	"backlight": {
