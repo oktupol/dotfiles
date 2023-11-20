@@ -1,5 +1,5 @@
 #!/bin/bash
 
-pid=$(swaymsg -t get_tree | jq '.. | select(.type?) | select(.type=="con" and .app_id=="kitty" and .focused==true).pid')
+pid=$(swaymsg -t get_tree | jq '.. | select(.type? and .app_id?) | select(.type=="con" and .app_id=="kitty" and .focused==true).pid')
 ppid=$(pgrep --newest --parent ${pid})
 readlink /proc/${ppid}/cwd || echo $HOME
