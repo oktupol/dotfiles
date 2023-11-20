@@ -23,7 +23,6 @@ export MOZ_ENABLE_WAYLAND=1
 export VDPAU_DRIVER="va_gl"
 
 # Aliases for flatpaks
-
 for bin in ~/.local/share/flatpak/exports/bin/*; do
 	appid="$(basename $bin)"
 	cmd="$(flatpak info -m $appid | awk -F= '/^command=/ {print $2}')"
