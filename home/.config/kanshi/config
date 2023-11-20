@@ -6,3 +6,8 @@ profile {
 	output eDP-1 disable
 	output "Samsung Electric Company C34H89x HTOM700567" enable
 }
+
+profile {
+	output eDP-1 disable
+	output "Samsung Electric Company SAMSUNG 0x00000F00" mode 3840x2160 scale 2.0
+}
