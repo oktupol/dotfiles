@@ -11,9 +11,15 @@
 		"spacing": 6
 	},
 	"pulseaudio": {
-		"format": "{desc} {icon} {volume}%",
-		"format-muted": "{desc} 󰖁",
-		"format-icons": ["󰕿", "󰖀", "󰕾"],
+		"format": "{icon} {volume}%",
+		"format-muted": "󰖁",
+		"format-icons": {
+			"headphone": ["󰋋 󰖀", "󰋋 󰕾"],
+			"speaker": ["󰓃 󰖀", "󰓃 󰕾"],
+			"hdmi": ["󰽟 󰖀", "󰽟 󰕾"],
+			"headset": ["󰋎 󰖀", "󰋎 󰕾"],
+			"default": ["󰖀", "󰕾"]
+		},
 		"scroll-step": 1,
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"on-click-right": "pavucontrol"
