@@ -22,7 +22,15 @@ export MOZ_ENABLE_WAYLAND=1
 # Hardware video acceleration
 export VDPAU_DRIVER="va_gl"
 
-# Aliases
+# Aliases for flatpaks
+
+for bin in ~/.local/share/flatpak/exports/bin/*; do
+	appid="$(basename $bin)"
+	cmd="$(flatpak info -m $appid | awk -F= '/^command=/ {print $2}')"
+	alias "$cmd"="$bin"
+done
+
+# Custom Aliases
 alias sl='echo $(tr -cd a-z0-9 < /dev/urandom | head -c 12)'
 alias vi='nvim'
 alias view='nvim -R'
