@@ -15,7 +15,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term kitty
+set $term kitty -d "$(sway_get_focused_cwd)"
 # Preferred browser
 set $browser firefox
 # Your preferred application launcher
