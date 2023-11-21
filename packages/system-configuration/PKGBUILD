@@ -1,0 +1,21 @@
+# Maintainer: Sebastian Wieland
+pkgname=oktupol-system-configuration
+pkgver=1
+pkgrel=1
+pkgdesc="Configuration files for my system"
+arch=('any')
+url="https://github.com/oktupol"
+license=('MIT')
+source=(
+	"getty-skip-username.conf"
+	"getty-no-disallocate.conf"
+)
+sha256sums=(
+	'8a1c0622d54737157fdd6ade20ace56f5913a2ca6c166e983118962b662d7395'
+	'287442113c602f3046d5d4ce0f417908bc633f2388701c085364c6de823a1acb'
+)
+
+package() {
+	install -Dm0644 getty-skip-username.conf "$pkgdir/etc/systemd/system/getty@tty1.service.d/skip-username.conf"
+	install -Dm0644 getty-no-disallocate.conf "$pkgdir/etc/systemd/system/getty@tty1.service.d/no-disallocate.conf"
+}

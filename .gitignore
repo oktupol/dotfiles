@@ -1,1 +1,4 @@
 home/.config/kitty/kitty.conf.bak
+packages/*/src
+packages/*/pkg
+packages/*/*.tar.zst
