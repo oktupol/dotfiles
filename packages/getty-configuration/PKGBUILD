@@ -1,11 +1,12 @@
 # Maintainer: Sebastian Wieland
-pkgname=oktupol-system-configuration
-pkgver=2
+pkgname=oktupol-getty-configuration
+pkgver=3
 pkgrel=1
-pkgdesc="Configuration files for my system"
+pkgdesc="Custom configuration files for getty"
 arch=('any')
 url="https://github.com/oktupol"
 license=('MIT')
+depends=("util-linux")
 source=(
 	"getty-skip-username.conf"
 	"getty-no-disallocate.conf"
