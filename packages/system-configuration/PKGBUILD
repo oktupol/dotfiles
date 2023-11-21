@@ -1,6 +1,6 @@
 # Maintainer: Sebastian Wieland
 pkgname=oktupol-system-configuration
-pkgver=1
+pkgver=2
 pkgrel=1
 pkgdesc="Configuration files for my system"
 arch=('any')
@@ -11,7 +11,7 @@ source=(
 	"getty-no-disallocate.conf"
 )
 sha256sums=(
-	'8a1c0622d54737157fdd6ade20ace56f5913a2ca6c166e983118962b662d7395'
+	'bb64e2808b58494452273453e97fccc3d0438d000f7e8fee1bf36714382ee86d'
 	'287442113c602f3046d5d4ce0f417908bc633f2388701c085364c6de823a1acb'
 )
 
