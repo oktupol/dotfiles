@@ -1,0 +1,4 @@
+timeout 600 "swaylock"
+timeout 900 "systemctl hybrid-sleep"
+before-sleep "swaylock"
+lock "swaylock"

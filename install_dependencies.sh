@@ -4,6 +4,7 @@ dependencies=(
 	sway
 	swaybg
 	swaylock
+	swayidle
 	waybar
 	wofi
 	kitty
