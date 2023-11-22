@@ -86,7 +86,6 @@ button:hover {
 #custom-media,
 #tray,
 #mode,
-#idle_inhibitor,
 #scratchpad,
 #mpd {
     padding: 0 10px;
@@ -227,12 +226,14 @@ label:focus {
 }
 
 #idle_inhibitor {
+	padding: 0 8px;
     background-color: #2d3436;
+	color: #1793D1;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+    background-color: #1793D1;
+    color: #ecf0f1;
 }
 
 #mpd {
