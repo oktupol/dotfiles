@@ -1,0 +1,10 @@
+[Unit]
+Description=Polkit Gnome Authentication Agent
+After=sway-session.target
+Documentation=man:polkit(8)
+
+[Service]
+ExecStart=/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+[Install]
+WantedBy=sway-session.target

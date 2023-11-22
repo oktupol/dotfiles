@@ -12,6 +12,7 @@ dependencies=(
 	grim
 	slurp
 	mako
+	polkit-gnome
 )
 
 sudo pacman -S ${dependencies[@]}
