@@ -286,7 +286,8 @@ label:focus {
 #custom-exit-sway,
 #custom-shutdown,
 #custom-reboot,
-#custom-lock{
+#custom-lock,
+#custom-sleep {
 	padding: 0 8px;
 }
 #custom-arch-logo {
@@ -304,4 +305,7 @@ label:focus {
 }
 #custom-lock {
 	background-color: #7BA626;
+}
+#custom-sleep {
+	background-color: #A66626;
 }
