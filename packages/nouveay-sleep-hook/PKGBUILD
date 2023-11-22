@@ -1,0 +1,19 @@
+# Maintainer: Sebastian Wieland
+pkgname=oktupol-nouveau-sleep-hook
+pkgver=2
+pkgrel=1
+pkgdesc="Hooks to fix systemd suspend"
+arch=('any')
+url="https://github.com/oktupol"
+license=('MIT')
+depends=('systemd')
+source=(
+	'10-nouveau.sh'
+)
+sha256sums=(
+	'70e28887753b70a0f0823160c99b307d9e2a6acb38ec7b3859b9958740d1de88'
+)
+
+package() {
+	install -Dm0755 10-nouveau.sh "$pkgdir/usr/lib/systemd/system-sleep/10-nouveau.sh"
+}
