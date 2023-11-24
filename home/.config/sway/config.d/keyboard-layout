@@ -1,4 +1,0 @@
-input type:keyboard {
-	xkb_layout us(altgr-intl)
-}
-# vi: ft=swayconfig
