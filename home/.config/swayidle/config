@@ -1,3 +1,4 @@
+timeout 290 "brightnessctl --save set 10%" resume "brightnessctl --restore"
 timeout 300 "swaylock"
 timeout 600 "systemctl hybrid-sleep"
 before-sleep "swaylock"
