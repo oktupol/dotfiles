@@ -8,6 +8,7 @@ input type:touchpad {
 
 input type:keyboard {
 	xkb_layout us(altgr-intl)
+	xkb_options compose:rctrl
 }
 
 seat * hide_cursor 5000
