@@ -1,4 +1,4 @@
-bindsym XF86AudioPrev exec playertl previous
+bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPlay exec playerctl play-pause
 
