@@ -1,12 +1,12 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "M+2 Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
 
 window#waybar {
     background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    border-bottom: 1px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -36,7 +36,7 @@ window#waybar.chromium {
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
+    box-shadow: inset 0 -1px transparent;
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
@@ -45,7 +45,7 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -1px #ffffff;
 }
 
 #workspaces button {
@@ -60,7 +60,7 @@ button:hover {
 
 #workspaces button.focused {
     background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -1px #ffffff;
 }
 
 #workspaces button.urgent {
@@ -69,7 +69,7 @@ button:hover {
 
 #mode {
     background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 
 #clock,
@@ -280,7 +280,7 @@ label:focus {
 
 /* Power drawer */
 #power * {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 #custom-arch-logo,
@@ -289,7 +289,7 @@ label:focus {
 #custom-reboot,
 #custom-lock,
 #custom-sleep {
-	padding: 0 8px;
+	padding: 0 6px;
 }
 #custom-arch-logo {
 	background-color: #2F2F2F;

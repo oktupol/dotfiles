@@ -11,14 +11,14 @@
 		"spacing": 6
 	},
 	"pulseaudio": {
-		"format": "{icon} {volume}%",
-		"format-muted": "󰖁",
+		"format": "{icon}{volume}%",
+		"format-muted": "󰖁 Silent",
 		"format-icons": {
-			"headphone": ["󰋋 󰖀", "󰋋 󰕾"],
-			"speaker": ["󰓃 󰖀", "󰓃 󰕾"],
-			"hdmi": ["󰽟 󰖀", "󰽟 󰕾"],
-			"headset": ["󰋎 󰖀", "󰋎 󰕾"],
-			"default": ["󰖀", "󰕾"]
+			"headphone": ["󰋋󰕿", "󰋋󰖀", "󰋋󰕾"],
+			"speaker": ["󰓃󰕿", "󰓃󰖀", "󰓃󰕾"],
+			"hdmi": ["󰽟󰕿", "󰽟󰖀", "󰽟󰕾"],
+			"headset": ["󰋎󰕿", "󰋎󰖀", "󰋎󰕾"],
+			"default": ["󰕿", "󰖀", "󰕾"]
 		},
 		"scroll-step": 1,
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
@@ -37,7 +37,7 @@
 		"on-scroll-down": "brightnessctl set 1%-"
 	},
 	"battery": {
-		"format": "{icon} {capacity}%",
+		"format": "{icon}{capacity}%",
 		"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
 	},
 	"network": {
