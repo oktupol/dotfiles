@@ -14,6 +14,7 @@ dependencies=(
 	slurp
 	mako
 	polkit-gnome
+	ttf-jetbrains-mono-nerd
 )
 
 sudo pacman -S ${dependencies[@]}
