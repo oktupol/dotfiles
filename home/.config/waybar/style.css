@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "M+2 Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+	font-size: 13px;
 }
 
 window#waybar {
@@ -49,7 +49,7 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 0 0.4em;
     background-color: transparent;
     color: #ffffff;
 }
@@ -88,13 +88,13 @@ button:hover {
 #mode,
 #scratchpad,
 #mpd {
-    padding: 0 10px;
+    padding: 0 0.6em;
     color: #ffffff;
 }
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    margin: 0 0.3em;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -226,7 +226,7 @@ label:focus {
 }
 
 #idle_inhibitor {
-	padding: 0 8px;
+	padding: 0 0.6em;
     background-color: #2d3436;
 	color: #1793D1;
 }
@@ -256,14 +256,14 @@ label:focus {
 #language {
     background: #00b093;
     color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
+    padding: 0 0.4em;
+    margin: 0 0.6em;
+    min-width: 1.2em;
 }
 
 #keyboard-state > label.locked {
-	font-size: 16px;
-    padding: 0 8px;
+	font-size: 1.2em;
+    padding: 0 0.6em;
     background: rgba(0, 0, 0, 0.2);
     color: #2d3436;
 	background-color: #4ceb4c;
@@ -279,8 +279,8 @@ label:focus {
 
 
 /* Power drawer */
-#power * {
-	font-size: 16px;
+#power .drawer-child label, #power #idle_inhibitor label {
+	font-size: 1.2em;
 }
 
 #custom-arch-logo,
@@ -289,7 +289,7 @@ label:focus {
 #custom-reboot,
 #custom-lock,
 #custom-sleep {
-	padding: 0 6px;
+	padding: 0 0.5em;
 }
 #custom-arch-logo {
 	background-color: #2F2F2F;

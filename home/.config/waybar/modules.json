@@ -3,7 +3,7 @@
 		"max-length": 100
 	},
 	"sway/scratchpad": {
-		"format": "{icon} {count}",
+		"format": "<span font_size=\"120%\" rise=\"-2pt\">{icon}</span> {count}",
 		"format-icons": ["", "󰖯", "󰖲"],
 		"tooltip-format": "{title}"
 	},
@@ -11,7 +11,7 @@
 		"spacing": 6
 	},
 	"pulseaudio": {
-		"format": "{icon}{volume}%",
+		"format": "<span font_size=\"120%\" rise=\"-2pt\">{icon}</span>{volume}%",
 		"format-muted": "󰖁 Silent",
 		"format-icons": {
 			"headphone": ["󰋋󰕿", "󰋋󰖀", "󰋋󰕾"],
@@ -25,29 +25,29 @@
 		"on-click-right": "pavucontrol"
 	},
 	"bluetooth": {
-		"format-off": "󰂲",
-		"format-on": "󰂯",
-		"format-connected": "󰂱 {num_connections}",
+		"format-off": "<span font_size=\"120%\" rise=\"-2pt\">󰂲</span>",
+		"format-on": "<span font_size=\"120%\" rise=\"-2pt\">󰂯</span>",
+		"format-connected": "<span font_size=\"120%\" rise=\"-2pt\">󰂱</span> {num_connections}",
 		"on-click-right": "blueman-manager"
 	},
 	"backlight": {
-		"format": "{icon} {percent}%",
+		"format": "<span font_size=\"120%\" rise=\"-2pt\">{icon}</span> {percent}%",
 		"format-icons": ["󰛩", "󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"],
 		"on-scroll-up": "brightnessctl set +1%",
 		"on-scroll-down": "brightnessctl set 1%-",
 		"on-click": "[[ $(brightnessctl -d platform::kbd_backlight get) -eq 0 ]] && brightnessctl -d platform::kbd_backlight set 1 || brightnessctl -d platform::kbd_backlight set 0"
 	},
 	"battery": {
-		"format": "{icon}{capacity}%",
+		"format": "<span font_size=\"120%\" rise=\"-2pt\">{icon}</span>{capacity}%",
 		"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
 	},
 	"network": {
-		"format-ethernet": "󰈁",
+		"format-ethernet": "<span font_size=\"120%\" rise=\"-2pt\">󰈁</span>",
 		"tooltip-format-ethernet": "{ifname} - {ipaddr}",
-		"format-wifi": "{icon} {essid}",
+		"format-wifi": "<span font_size=\"120%\" rise=\"-2pt\">{icon}</span> {essid}",
 		"tooltip-format-wifi": "{ifname} - {ipaddr} - {frequency}MHz - {signalStrength}%",
 		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-		"format-disconnected": "󰌙",
+		"format-disconnected": "<span font_size=\"120%\" rise=\"-2pt\">󰌙</span>",
 		"tooltip-format-disconnected": "Disconnected"
 	},
 	"clock": {
