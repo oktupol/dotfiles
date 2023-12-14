@@ -7,6 +7,7 @@ Documentation=man:waybar(5)
 ExecStart=/usr/bin/waybar
 ExecReload=kill -s USR2 $MAINPID
 Type=simple
+Restart=always
 
 [Install]
 WantedBy=sway-session.target
