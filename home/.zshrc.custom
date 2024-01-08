@@ -33,3 +33,4 @@ done
 alias sl='echo $(tr -cd a-z0-9 < /dev/urandom | head -c 12)'
 alias vi='nvim'
 alias view='nvim -R'
+alias updatemirrors='curl -s "https://archlinux.org/mirrorlist/?country=AT&country=DE&country=FR&&country=GB&country=CH&protocol=https&use_mirror_status=on" | sed -e "s/^#Server/Server/" -e "/^#/d" | rankmirrors -n 5 - | sudo tee /etc/pacman.d/mirrorlist'
