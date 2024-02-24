@@ -10,7 +10,7 @@
 		"battery",
 		"bluetooth",
 		"network",
-		"clock",
+		"clock#small",
 		"keyboard-state#numlock",
 		"keyboard-state#capslock",
 		"group/power"
@@ -27,7 +27,7 @@
 		"battery",
 		"bluetooth",
 		"network",
-		"clock",
+		"clock#large",
 		"keyboard-state#numlock",
 		"keyboard-state#capslock",
 		"group/power"

@@ -51,8 +51,12 @@
 		"format-disconnected": "<span font_size=\"120%\" rise=\"-2pt\">󰌙</span>",
 		"tooltip-format-disconnected": "Disconnected"
 	},
-	"clock": {
+	"clock#small": {
 		"format-alt": "{:%A %d %B %H:%M}",
+		"tooltip-format": "<tt>{calendar}</tt>"
+	},
+	"clock#large": {
+		"format": "{:%A %d %B %H:%M}",
 		"tooltip-format": "<tt>{calendar}</tt>"
 	},
 	"keyboard-state#numlock": {
