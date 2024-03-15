@@ -29,6 +29,11 @@ for bin in ~/.local/share/flatpak/exports/bin/*; do
 	alias "$cmd"="$bin"
 done
 
+# Completion for spotify_player
+if (( $+commands[spotify_player] )); then
+	eval "$(spotify_player generate zsh)"
+fi
+
 # Custom Aliases
 alias sl='echo $(tr -cd a-z0-9 < /dev/urandom | head -c 12)'
 alias vi='nvim'
