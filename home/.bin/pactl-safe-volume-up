@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+current_sink="$(pactl get-default-sink)"
+volumes="$(pactl -f json list sinks | jq -r '.[] | select(.name == "'"$current_sink"'") | {volume: .volume.["front-left"].value, base_volume: .base_volume.value}')"
+current_volume=$(echo $volumes | jq -r '.volume')
+max_volume=$(echo $volumes | jq -r '.base_volume')
+
+if [[ $current_volume -gt $max_volume ]]; then
+	pactl set-sink-volume @DEFAULT_SINK@ $max_volume
+fi
