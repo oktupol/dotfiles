@@ -11,3 +11,5 @@
 	autoSetupRemote = true
 [core]
 	pager = less -F
+[tag]
+	gpgSign = true
