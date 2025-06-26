@@ -23,11 +23,13 @@ export MOZ_ENABLE_WAYLAND=1
 export VDPAU_DRIVER="va_gl"
 
 # Aliases for flatpaks
-for bin in ~/.local/share/flatpak/exports/bin/*; do
-	appid="$(basename $bin)"
-	cmd="$(flatpak info -m $appid | awk -F= '/^command=/ {print $2}')"
-	alias "$cmd"="$bin"
-done
+if [[ -d ~/.local/share/flatpak/exports/bin ]]; then
+	for bin in ~/.local/share/flatpak/exports/bin/*; do
+		appid="$(basename $bin)"
+		cmd="$(flatpak info -m $appid | awk -F= '/^command=/ {print $2}')"
+		alias "$cmd"="$bin"
+	done
+fi
 
 # Completion for spotify_player
 if (( $+commands[spotify_player] )); then
