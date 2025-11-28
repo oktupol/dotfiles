@@ -71,6 +71,9 @@ output * bg ~/Pictures/Wallpapers/Eagle.png fill
     # Kill focused window
     bindsym $mod+Shift+q kill
 
+	# Force kill focused window
+	bindsym $mod+Shift+F4 exec kill -9 $(swaymsg -t get_tree | jq '.. | select(.type?) | select(.focused==true).pid')
+
     # Start your launcher
     bindsym $mod+d exec $menu
 
