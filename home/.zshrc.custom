@@ -22,6 +22,9 @@ export MOZ_ENABLE_WAYLAND=1
 # Hardware video acceleration
 export VDPAU_DRIVER="va_gl"
 
+# Neovim as Man Pager
+export MANPAGER='nvim +Man!'
+
 # Aliases for flatpaks
 if [[ -d ~/.local/share/flatpak/exports/bin ]]; then
 	for bin in ~/.local/share/flatpak/exports/bin/*; do
@@ -34,6 +37,11 @@ fi
 # Completion for spotify_player
 if (( $+commands[spotify_player] )); then
 	eval "$(spotify_player generate zsh)"
+fi
+
+# Load Angular CLI autocompletion.
+if (( $+commands[ng] )); then
+	source <(ng completion script)
 fi
 
 # Custom Aliases
