@@ -1,0 +1,25 @@
+#!/bin/sh
+
+set -euo pipefail
+
+# Creating temporary file
+tmpfile=$(mktemp)
+
+# Handle interrupts
+trap 'rm -f "$tmpfile"' EXIT
+
+# Read stdin into file
+if [[ -t 0 ]]; then
+	: > "$tmpfile"
+else
+	cat > "$tmpfile"
+fi
+
+# Open editor
+"${EDITOR:-vi}" "$tmpfile" || exit $?
+
+# Output result
+cat "$tmpfile"
+
+# Cleanup
+rm "$tmpfile"
