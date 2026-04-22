@@ -16,7 +16,7 @@ else
 fi
 
 # Open editor
-"${EDITOR:-vi}" "$tmpfile" || exit $?
+"${EDITOR:-vi}" "$tmpfile" </dev/tty >/dev/tty 2>&1
 
 # Output result
 cat "$tmpfile"
