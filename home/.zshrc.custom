@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # Vi Mode
 set -o vi
 
