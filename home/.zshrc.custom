@@ -25,6 +25,9 @@ export VDPAU_DRIVER="va_gl"
 # Neovim as Man Pager
 export MANPAGER='nvim +Man!'
 
+# Default scanner
+export SANE_DEFAULT_DEVICE='dsseries:usb:0x04F9:0x60E0'
+
 # Aliases for flatpaks
 if [[ -d ~/.local/share/flatpak/exports/bin ]]; then
 	for bin in ~/.local/share/flatpak/exports/bin/*; do

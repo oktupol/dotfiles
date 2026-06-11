@@ -18,6 +18,8 @@ set $right l
 set $term kitty -d "$(sway_get_focused_cwd)"
 # Preferred browser
 set $browser firefox
+# Preferred e-mail client
+set $email proton-mail
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -79,6 +81,9 @@ output * bg ~/Pictures/Wallpapers/Eagle.png fill
 
 	# Start a browser
 	bindsym $mod+i exec $browser
+
+	# Start e-mail client
+	bindsym $mod+o exec $email
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
