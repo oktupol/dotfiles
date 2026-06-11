@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Print the working directory of the currently focused kitty terminal in Sway.
+# Used to open new terminals in the same directory as the focused one.
+
+# Walk the Sway tree and grab the PID of the focused kitty window.
 pid=$(swaymsg -t get_tree | jq '.. | select(.type? and .app_id?) | select(.type=="con" and .app_id=="kitty" and .focused==true).pid')
-ppid=$(pgrep --newest --parent ${pid})
+# kitty's PID is the shell's parent; find that shell's PID.
+ppid=$(pgrep --parent ${pid} 'zsh|bash|fish')
+# Resolve that shell's cwd via /proc, falling back to $HOME if it can't be read.
 readlink /proc/${ppid}/cwd || echo $HOME

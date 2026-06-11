@@ -1,12 +1,20 @@
 #!/bin/zsh
 
+# Raise the default audio sink's volume by 5%, but never above the hardware
+# "base volume" (0 dB / 100%). This prevents software amplification, which would
+# otherwise distort the sound, when bound to a volume-up media key.
+
+# Bump the volume first.
 pactl set-sink-volume @DEFAULT_SINK@ +5%
 
+# Read back the current and base (max-safe) volume of the active sink as raw
+# PulseAudio values, pulling the JSON object for the default sink.
 current_sink="$(pactl get-default-sink)"
 volumes="$(pactl -f json list sinks | jq -r '.[] | select(.name == "'"$current_sink"'") | {volume: .volume.["front-left"].value, base_volume: .base_volume.value}')"
 current_volume=$(echo $volumes | jq -r '.volume')
 max_volume=$(echo $volumes | jq -r '.base_volume')
 
+# If the bump pushed us past the base volume, clamp back down to it.
 if [[ $current_volume -gt $max_volume ]]; then
 	pactl set-sink-volume @DEFAULT_SINK@ $max_volume
 fi

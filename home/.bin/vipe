@@ -1,25 +1,31 @@
 #!/bin/sh
 
+# vipe — insert a text editor into the middle of a shell pipe. It reads stdin,
+# lets you edit that text interactively, then writes the result to stdout:
+#   echo hi | vipe | another-command
+# Abort on errors, undefined vars, or failed pipe stages.
 set -euo pipefail
 
-# Creating temporary file
+# Scratch file that holds the pipe contents while being edited.
 tmpfile=$(mktemp)
 
-# Handle interrupts
+# Make sure the temp file is removed no matter how the script exits.
 trap 'rm -f "$tmpfile"' EXIT
 
-# Read stdin into file
+# Seed the temp file: start empty when stdin is a terminal (nothing piped in),
+# otherwise capture whatever was piped in.
 if [[ -t 0 ]]; then
 	: > "$tmpfile"
 else
 	cat > "$tmpfile"
 fi
 
-# Open editor
+# Launch the user's editor on the temp file, wired to the controlling terminal
+# so it works even when stdin/stdout are pipes rather than the tty.
 "${EDITOR:-vi}" "$tmpfile" </dev/tty >/dev/tty 2>&1
 
-# Output result
+# Emit the edited contents to stdout (the next stage of the pipe).
 cat "$tmpfile"
 
-# Cleanup
+# Remove the temp file (the EXIT trap also covers this).
 rm "$tmpfile"

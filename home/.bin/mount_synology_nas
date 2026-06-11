@@ -1,3 +1,6 @@
 #!/bin/sh
 
+# Mount the "home" share of the Synology NAS (at 192.168.178.66) over SMB/CIFS
+# onto ~/synology. Credentials come from ~/.synologycreds; uid/gid 1000 make the
+# mounted files owned by the local user, and vers=3.0 pins the SMB protocol.
 sudo mount -t cifs -o credentials=/home/sebastian/.synologycreds,vers=3.0,noserverino,uid=1000,gid=1000 //192.168.178.66/home /home/sebastian/synology/

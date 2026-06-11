@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Show a wofi picker of all windows currently in Sway's scratchpad, then focus
+# (summon) the one you select. A graphical way to retrieve hidden windows.
+#
+# Pipeline:
+#   1. swaymsg get_tree dumps the window tree as JSON.
+#   2. jq lists each scratchpad (__i3_scratch) window as a "<con_id> <title>" line.
+#   3. wofi shows those lines as a dmenu and returns the chosen one.
+#   4. the final block reads the selected container id and tells Sway to focus it.
 swaymsg -t get_tree \
 	| jq -r '.nodes[].nodes[] | select(.name == "__i3_scratch") | .floating_nodes.[] | ((.id | tostring) + " " + .name)' \
 	| wofi --prompt "Scratchpad" --show dmenu \
